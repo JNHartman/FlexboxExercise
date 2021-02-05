@@ -52,6 +52,9 @@ section {
       flex-direction: column;
       /* # 4 */
       align-items: center;
+          
+      /* Bonus # 1 */
+          flex-direction: column-reverse;
   }
   /* # 5 */
   #two{
@@ -60,7 +63,28 @@ section {
       align-items: center;
       /* # 7 */
       justify-content: space-between;
-      /* 8 */
+      /* # 8 */
       flex-wrap: wrap;
 
+      /* Bonus # 2 */
+           
+      /* Bonus # 3 */
+      
+
   }
+
+  /* Change the order of the elements in the second container (AKA Light Grey box) so that Brown is first, then Orange, and then Purple.
+In the second container (AKA Light Grey box), move the Brown box to the upper left corner and move the Purple box to the bottom right corner. (Orange box will remain in the center). */
+
+#brown{
+align-self: flex-start;
+order: 1;
+ } 
+#purple{
+align-self: flex-end;
+order: 3;
+ }
+#orange{
+align-self: center;
+order: 2;
+ }
